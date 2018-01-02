@@ -1,0 +1,73 @@
+#===================================
+#
+#这里是GodSay的插件主配置
+#
+#===================================
+
+#这个message包含插件的提示
+message:
+  enable: GodSay已启用！
+  disable: GodSay已卸载！
+  reload: GodSay已重载！
+  nopermission: 你没有权限这么做！
+  unavailable: 命令不可用！
+  god: '&b神说'
+  colon: ' &6>>>&f '
+  at: 在
+  noplayer: 没有任何在线的玩家！
+  oncooldown: 命令冷却中
+
+#这里是/godsay和/godsay hw指令的冷却时间（单位毫秒）
+cooldown: 5000
+
+#helloworld表示输入/godsay hw指令后会输出在聊天栏的信息
+helloworld:
+- 'Hello, world! '
+- '你好，世界！'
+
+#randombroadcast是输入/godsay hw命令后随机出现的内容
+randombroadcast:
+- '一双好奇的眼睛打量着多彩的世界~'
+- '深蓝的天空中挂着一轮金黄的圆月，下面是海边的沙地，都种着一望无际的碧绿的西瓜。'
+- '学医救不了中国人'
+- '啊，哪个网吧？'
+- '我们的征途是星辰大海！'
+- '我只身一人，靠着自己的力量征服了整个欧洲！'
+- 'My biggest mistake was I made Alibaba.'
+
+#使用/godsay指令随机出现的内容"神说"
+#输出格式为"godsay"+"colon"+"随机玩家"+"at"+"site"+"event"
+#其中godsay colon at都可以在message中配置
+#地点site和事件event请在下方添加
+#英语或其他语言使用者可以根据自己需要更改site和event的顺序, 介词"在"可以留空
+godsay:
+#这里填写你希望当玩家聊天时触发GodSay时的概率
+  prob: 5%
+  site:
+  - 'Minecraft'
+  - '瓜田里'
+  - '仙台医学专门学校'
+  - '围墙里'
+  - '文昌烟花发射中心'
+  - '东风快递公司'
+  - '江南皮革厂'
+  - '秋名山'
+  - '华莱士面前'
+  - '天安门前'
+  - '某第三中学'
+  - '广东'
+  - '香港'
+  event:
+  - '向世界问好'
+  - '刺猹'
+  - '学医'
+  - '修发动机'
+  - '发射CZ-5大型烟花'
+  - '打包快递'
+  - '吃喝嫖赌'
+  - '驾驶着一辆五菱宏光'
+  - '谈笑风生'
+  - '怒放了他的生命'
+  - '嚼着槟榔翻围墙'
+  - '吃福建人'
+  - '当记者'

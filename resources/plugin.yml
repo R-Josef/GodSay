@@ -1,0 +1,19 @@
+name: GodSay
+main: cn.slfeng.godsay.Main
+version: 1.0
+commands:
+  godsay:
+     description: GodSay的主要指令.
+permissions:
+    godsay.command:
+        description: 允许你使用 /godsay 命令.
+        default: true
+    godsay.cmdsomeone:
+        description: 允许你使用 /godsay <玩家名> 命令.
+        default: op
+    godsay.hw:
+        description: 允许你使用 /godsay hw 命令.
+        default: true
+    godsay.reload:
+        description: 允许你使用 /godsay reload 命令.
+        default: op
